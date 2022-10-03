@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootSelectAnOption" prefHeight="190.0" prefWidth="330.0" stylesheets="@app.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main">
+    <ImageView fx:id="imageToClose" fitHeight="26.0" fitWidth="46.0" layoutX="283.0" layoutY="1.0" onMouseClicked="#clickToClose" pickOnBounds="true" preserveRatio="true">
+        <Image url="@closeButtonDark.png" />
+    </ImageView>
+    <ImageView fx:id="imageToMinimize" fitHeight="26.0" fitWidth="46.0" layoutX="233.0" layoutY="1.0" onMouseClicked="#clickToMinimize" pickOnBounds="true" preserveRatio="true">
+        <Image url="@minimizeButtonDark.png" />
+    </ImageView>
+    <Button layoutX="113.0" layoutY="125.0" mnemonicParsing="false" onAction="#actionSiSelect" prefHeight="26.0" prefWidth="39.0" text="Sí" />
+    <Button layoutX="171.0" layoutY="125.0" mnemonicParsing="false" onAction="#actionNoSelect" prefHeight="26.0" prefWidth="46.0" text="No" />
+    <Label layoutX="14.0" layoutY="1.0" text="Select an option" />
+   <Label layoutX="97.0" layoutY="67.0" text="Desea continuar?">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+</AnchorPane>
